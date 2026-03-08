@@ -1,0 +1,471 @@
+/* =================================================
+RESET
+================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* =================================================
+LAYOUT
+================================================= */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* =================================================
+TYPOGRAPHY
+================================================= */
+
+h1 {
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.desc {
+  max-width: 650px;
+  margin: 0 auto 60px;
+  color: #555;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* =================================================
+BUTTONS
+================================================= */
+
+.hero-buttons a {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background: black;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+/* =================================================
+HERO SECTION
+================================================= */
+
+.hero {
+  padding: 80px 0;
+  background: #eeeeee;
+}
+
+.hero-left {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.hero-left p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.hero-right {
+  display: inline-block;
+  width: 45%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.hero-right img {
+  width: 420px;
+  border-radius: 18px;
+}
+
+/* =================================================
+FEATURES SECTION
+================================================= */
+
+.features {
+  background: white;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.cards {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 330px;
+  height: 300px;
+  padding: 45px 35px;
+  border-radius: 18px;
+  margin: 12px;
+  vertical-align: top;
+}
+
+.card p {
+  font-size: 15px;
+  color: #2d3748;
+  max-width: 260px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* card colors */
+
+.blue {
+  background: #dbeafe;
+  border: 1px solid #9db2ce;
+}
+
+.green {
+  background: #d0fae5;
+  border: 1px solid #8ccbb0;
+}
+
+.purple {
+  background: #f3e8ff;
+  border: 1px solid #b9add1;
+}
+
+/* icon */
+
+.icon {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.blue .icon {
+  background: #2563eb;
+}
+.green .icon {
+  background: #059669;
+}
+.purple .icon {
+  background: #7c3aed;
+}
+
+.icon::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 6px;
+}
+
+.green .icon::after {
+  border-radius: 50%;
+}
+
+/* =================================================
+MORE THAN JUST A GYM SECTION
+================================================= */
+
+.more-gym {
+  padding: 80px 0;
+}
+
+.gym-left {
+  float: left;
+  width: 48%;
+}
+
+.gym-left img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.gym-right {
+  float: right;
+  width: 48%;
+}
+
+.gym-right h2 {
+  font-size: 28px;
+  color: #1e3a5f;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  border-left: 4px solid black;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.feature-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.feature-item p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* =================================================
+TESTIMONIALS SECTION
+================================================= */
+
+.testimonials {
+  padding: 80px 0;
+  text-align: center;
+  background: white;
+}
+
+.reviews {
+  margin-top: 40px;
+}
+
+.review-card {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.review-card:last-child {
+  margin-right: 0;
+}
+
+.review-header img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-header .info {
+  float: left;
+}
+
+.review-card p {
+  clear: both;
+  margin-top: 15px;
+}
+
+/* =================================================
+STATS
+================================================= */
+
+.stats {
+  background: #e5e7eb;
+  padding: 40px 0;
+  border-radius: 14px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.stat {
+  float: left;
+  width: 25%;
+}
+
+.stat h3 {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+
+.stat p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* =================================================
+MEMBERSHIP FORM
+================================================= */
+
+.membership {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.form-box {
+  width: 850px;
+  margin: 40px auto;
+  background: #f9fafb;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.row .field {
+  float: left;
+  width: 48%;
+}
+
+.row .field:first-child {
+  margin-right: 4%;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.field textarea {
+  height: 120px;
+  resize: none;
+}
+
+.join-btn {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-note {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* =================================================
+FOOTER
+================================================= */
+
+.footer {
+  background: #101828;
+  color: oklch(70.7% 0.022 261.325);
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.footer-about {
+  float: left;
+  width: 40%;
+}
+
+.footer-col {
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+}
+
+.social-links a {
+  margin-right: 15px;
+}
+
+/* =================================================
+FOOTER BOTTOM
+================================================= */
+
+.footer-bottom {
+  border-top: 1px solid #24364f;
+  margin-top: 50px;
+  padding-top: 20px;
+  clear: both;
+}
+
+.copyright {
+  float: left;
+  font-size: 13px;
+}
+
+.footer-links {
+  float: right;
+}
+
+.footer-links a {
+  margin-left: 20px;
+  font-size: 13px;
+}
